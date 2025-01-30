@@ -25,7 +25,7 @@ data:
       port: 8888
 
     h2.database:
-      jdbcUrl: jdbc:h2:mem:ProductsDB
+      jdbcUrl: jdbc:h2:mem:testdb
       driverClassName: org.h2.Driver
       username: sa
       password: password
