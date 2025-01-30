@@ -17,6 +17,7 @@ public class BondTrackingController {
 
     @GetMapping("/active-trades")
     public List<Trade> getActiveTrades() {
+    	System.out.println("COntroller Invokded");
         return bondTrackingService.getActiveTrades();
     }
     
@@ -27,6 +28,7 @@ public class BondTrackingController {
 
     @GetMapping("/matured-bonds")
     public List<Trade> getMaturedBonds() {
+    	System.out.println("COntroller Invokded");
         return bondTrackingService.getMaturedBonds();
     }
 }

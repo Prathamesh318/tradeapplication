@@ -18,7 +18,9 @@ public class BondTrackingService {
     public List<Trade> getActiveTrades() {
         LocalDate currentDate = LocalDate.now();
         LocalDate endDate = currentDate.plusDays(5);
-        return tradeRepository.findBySettlementDateBetween(currentDate, endDate);
+        List<Trade>data= tradeRepository.findBySettlementDateBetween(currentDate, endDate);
+        System.out.println("DATA"+data);
+        return data;
     }
 
     public List<Trade> getMaturedBonds() {
